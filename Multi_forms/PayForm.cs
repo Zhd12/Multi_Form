@@ -13,6 +13,8 @@ namespace Multi_forms
     public partial class PayForm : Form
     {
         SearchForm sf = new SearchForm();
+        public Form1 f1;
+
         public PayForm()
         {
             InitializeComponent();
@@ -23,6 +25,8 @@ namespace Multi_forms
         {
             this.Hide();
             e.Cancel = true;
+            f1.resultLabel.Text = "زهرا دوزنده ";
+
         }
         private void button2_Click(object sender, EventArgs e)
         {
